@@ -12,7 +12,7 @@ A 2D RPG Dungeon Crawler developed using Unity as part of our Application Devlop
 <details>
    <summary> [v0.06] - 2023-05-01 </summary>
 
-   **Added:**
+   ## Added:
    - Main game folder w/ necessary assets, scripts, etc
 
    **WARNING: PLEASE READ BEFORE DOWNLOADING**
