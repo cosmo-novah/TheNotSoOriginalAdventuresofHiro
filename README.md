@@ -16,7 +16,7 @@ A 2D RPG Dungeon Crawler developed using Unity as part of our Application Devlop
    - Main game folder w/ necessary assets, scripts, etc
 
    **WARNING: PLEASE READ BEFORE DOWNLOADING**
-   1. Once you download the main folder, go into the **Assets** folder and unzip **Firebase_Assets.rar** in the same folder.
+   1. Once you download the main folder, go into the **Assets** folder and unzip **Firebase_Assets.rar** in the same folder and **DELETE IT AFTERWARDS**.
       - This contains the necessary assets for Firebase to work with the project
 
    2. General Warning: I really have no clue if this folder will be compatible with other machines so **TRY AT YOUR OWN RISK**
