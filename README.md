@@ -10,6 +10,14 @@ A 2D RPG Dungeon Crawler developed using Unity as part of our Application Devlop
 ## CHANGELOG
 
 <details>
+   <summary> [v0.06.01] - 2023-05-09  </summary> <br />
+
+   **Added:**
+   - Minor changes to to README file <br />
+   
+</details>
+
+<details>
    <summary> [v0.06] - 2023-05-02  </summary> <br />
 
    **Added:**
@@ -21,7 +29,7 @@ A 2D RPG Dungeon Crawler developed using Unity as part of our Application Devlop
 
    2. General Warning: I really have no clue if this folder will be compatible with other machines so **TRY AT YOUR OWN RISK**
 
-   **KNOWN BUGS TO WORK ON**
+   :bug: **KNOWN BUGS TO WORK ON**
    1. Killing an enemy with the sword equipped causes more loot to drop than it should
 
    2. Wall colliders work with the player, but not with the enemies (likely due to RigidBody2D complications)
