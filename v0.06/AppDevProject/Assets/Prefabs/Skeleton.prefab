@@ -209,6 +209,7 @@ MonoBehaviour:
   lootList:
   - {fileID: 11400000, guid: 0c1bcb7f48a83244bb3e6bef9b2bf153, type: 2}
   - {fileID: 11400000, guid: d5ba5ac4f3772154b823e75bb2517c8f, type: 2}
+  - {fileID: 11400000, guid: f64324e66abe5864492b9f788b5e91f7, type: 2}
 --- !u!95 &2439257119351132982
 Animator:
   serializedVersion: 5
