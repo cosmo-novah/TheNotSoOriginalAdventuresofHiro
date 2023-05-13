@@ -2,6 +2,14 @@
 
 A 2D RPG Dungeon Crawler developed using Unity as part of our Application Devlopment course.
 
+⚠️ **WARNING: PLEASE READ BEFORE DOWNLOADING**
+
+1.  Once you download the main folder, go into the **Assets** folder and unzip **Firebase_Assets.rar** in the same folder and **DELETE IT AFTERWARDS**.
+
+    - This contains the necessary assets for Firebase to work with the project
+
+2.  General Warning: I really have no clue if this folder will be compatible with other machines so **TRY AT YOUR OWN RISK**
+
 **Developers:**
 
 - Nathan Wardinsky
@@ -9,6 +17,13 @@ A 2D RPG Dungeon Crawler developed using Unity as part of our Application Devlop
 - Jose Zamora
 
 ## CHANGELOG
+
+<details>
+   <summary> [v0.07.00] - 2023-05-12  </summary> <br />
+
+**Added:**
+
+- Health potions: drop whenever an enemy is killed <br />
 
 <details>
    <summary> [v0.06.02] - 2023-05-11  </summary> <br />
@@ -29,19 +44,11 @@ A 2D RPG Dungeon Crawler developed using Unity as part of our Application Devlop
 </details>
 
 <details>
-   <summary> [v0.06] - 2023-05-02  </summary> <br />
+   <summary> [v0.06.00] - 2023-05-02  </summary> <br />
 
 **Added:**
 
 - Main game folder w/ necessary assets, scripts, etc
-
-⚠️ **WARNING: PLEASE READ BEFORE DOWNLOADING**
-
-1.  Once you download the main folder, go into the **Assets** folder and unzip **Firebase_Assets.rar** in the same folder and **DELETE IT AFTERWARDS**.
-
-    - This contains the necessary assets for Firebase to work with the project
-
-2.  General Warning: I really have no clue if this folder will be compatible with other machines so **TRY AT YOUR OWN RISK**
 
 :bug: **KNOWN BUGS TO WORK ON**
 
