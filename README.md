@@ -24,6 +24,8 @@ A 2D RPG Dungeon Crawler developed using Unity as part of our Application Devlop
 **Added:**
 
 - Health potions: drop whenever an enemy is killed <br />
+    
+</details>
 
 <details>
    <summary> [v0.06.02] - 2023-05-11  </summary> <br />
