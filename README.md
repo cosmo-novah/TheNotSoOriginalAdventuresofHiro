@@ -19,6 +19,15 @@ A 2D RPG Dungeon Crawler developed using Unity as part of our Application Devlop
 ## CHANGELOG
 
 <details>
+   <summary> [v0.08.01] - 2023-05-13  </summary> <br />
+
+**Added:**
+
+- Switched folders over from v0.07 to v0.08 <br />
+
+</details>
+
+<details>
    <summary> [v0.08.00] - 2023-05-13  </summary> <br />
 
 **Added:**
