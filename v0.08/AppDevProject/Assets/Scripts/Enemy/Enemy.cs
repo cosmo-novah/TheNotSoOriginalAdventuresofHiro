@@ -15,17 +15,16 @@ public class Enemy : MonoBehaviour
     public int[] healthy;
     private float canAttack;
     public Transform target;
-    public int anibox;
     public float step;
     private float timer;
     // public Rigidbody2D rb2d;     // had to comment out
     //public GameObject player;
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
+        //if (Instance == null)
+        //{
+        Instance = this;
+        //}
         // else if (Instance != null)
         // {
         //     Debug.Log("Instance already exists, destroying object!");
@@ -70,22 +69,22 @@ public class Enemy : MonoBehaviour
                 switch (EnemyAnimationDetection.Instance.MTA_VAR)
                 {
                     case 1:
-                        Debug.Log(EnemyAnimationDetection.Instance.trigger_point);
+                        //Debug.Log(EnemyAnimationDetection.Instance.trigger_point);
                         Vector3 kbN = new Vector3(0f, 1.25f, 0f);
                         other.gameObject.GetComponent<Transform>().position += kbN;
                         break;
                     case 2:
-                        Debug.Log(EnemyAnimationDetection.Instance.trigger_point);
+                        //Debug.Log(EnemyAnimationDetection.Instance.trigger_point);
                         Vector3 kbE = new Vector3(1.25f, 0f, 0f);
                         other.gameObject.GetComponent<Transform>().position += kbE;
                         break;
                     case 3:
-                        Debug.Log(EnemyAnimationDetection.Instance.trigger_point);
+                        //Debug.Log(EnemyAnimationDetection.Instance.trigger_point);
                         Vector3 kbS = new Vector3(0f, -1.25f, 0f);
                         other.gameObject.GetComponent<Transform>().position += kbS;
                         break;
                     case 4:
-                        Debug.Log(EnemyAnimationDetection.Instance.trigger_point);
+                        //Debug.Log(EnemyAnimationDetection.Instance.trigger_point);
                         Vector3 kbW = new Vector3(-1.25f, 0f, 0f);
                         other.gameObject.GetComponent<Transform>().position += kbW;
                         break;
@@ -109,7 +108,7 @@ public class Enemy : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             target = other.transform;
-            EnemyAnimationDetection.Instance.idle = false;
+            //EnemyAnimationDetection.Instance.idle = false;
         }
     }
 
@@ -119,7 +118,7 @@ public class Enemy : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             target = null;
-            EnemyAnimationDetection.Instance.idle = true;
+            //EnemyAnimationDetection.Instance.idle = true;
         }
     }
 
@@ -130,19 +129,19 @@ public class Enemy : MonoBehaviour
         switch (PlayerMovement.Instance.direction)
         {
             case 1:
-                Vector3 kbN = new Vector3(0f, 0.5f, 0f);
+                Vector3 kbN = new Vector3(0f, 1.25f, 0f);
                 transform.position += kbN;
                 break;
             case 2:
-                Vector3 kbE = new Vector3(0.5f, 0f, 0f);
+                Vector3 kbE = new Vector3(1.25f, 0f, 0f);
                 transform.position += kbE;
                 break;
             case 3:
-                Vector3 kbS = new Vector3(0f, -0.5f, 0f);
+                Vector3 kbS = new Vector3(0f, -1.25f, 0f);
                 transform.position += kbS;
                 break;
             case 4:
-                Vector3 kbW = new Vector3(-0.5f, 0f, 0f);
+                Vector3 kbW = new Vector3(-1.25f, 0f, 0f);
                 transform.position += kbW;
                 break;
         }
@@ -159,6 +158,7 @@ public class Enemy : MonoBehaviour
     public void Die()
     {
         GetComponent<LootBag>().InstantiateLoot(transform.position);
+        EnemyAnimationDetection.Instance.totalEnemies--;
         Destroy(gameObject);
         Debug.Log("Enemy Died");
     }

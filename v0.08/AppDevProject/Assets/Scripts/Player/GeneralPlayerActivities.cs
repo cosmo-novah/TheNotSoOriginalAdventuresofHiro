@@ -36,7 +36,7 @@ public class GeneralPlayerActivities : MonoBehaviour
         }
         if (other.gameObject.tag == "Currency_Gem")
         {
-            wallet++;
+            wallet += 5;
             string label = "+1 Gem";
             ShowFloatingText(label);
             Destroy(other.gameObject);

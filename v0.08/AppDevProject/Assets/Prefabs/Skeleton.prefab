@@ -17,7 +17,8 @@ GameObject:
   - component: {fileID: 2758604196909259748}
   - component: {fileID: 2439257119351132977}
   - component: {fileID: 2439257119351132982}
-  m_Layer: 13
+  - component: {fileID: 902382121353515874}
+  m_Layer: 0
   m_Name: Skeleton
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -175,7 +176,6 @@ MonoBehaviour:
   maxHealth: 10
   healthy: 
   target: {fileID: 0}
-  anibox: 0
   step: 0
 --- !u!114 &2758604196909259748
 MonoBehaviour:
@@ -192,7 +192,9 @@ MonoBehaviour:
   trigger_point: 0
   MTA_VAR: 0
   idle: 1
+  totalEnemies: 0
   animator: {fileID: 2439257119351132982}
+  player: {fileID: 0}
 --- !u!114 &2439257119351132977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,6 +234,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!50 &902382121353515874
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2439257119351132991}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &2439257119945213806
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,7 +272,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2439257119945213807
 Transform:
   m_ObjectHideFlags: 0
@@ -314,7 +337,7 @@ GameObject:
   - component: {fileID: 2439257119968701971}
   - component: {fileID: 613744404680535880}
   - component: {fileID: 2439257119968701968}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: Mole_Hitbox
   m_TagString: Hitbox
   m_Icon: {fileID: 0}
@@ -400,7 +423,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2439257120008958627
 Transform:
   m_ObjectHideFlags: 0
@@ -471,7 +494,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2439257120334448278
 Transform:
   m_ObjectHideFlags: 0
@@ -542,7 +565,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2439257120738689579
 Transform:
   m_ObjectHideFlags: 0
