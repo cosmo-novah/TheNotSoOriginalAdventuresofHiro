@@ -25,6 +25,8 @@ A 2D RPG Dungeon Crawler developed using Unity as part of our Application Devlop
 
 - Big Health Potion (30 health) drops activated. <br />
   Rare Speed Potion drops activated <br />
+- Inventory Style Updated <br />
+- Game Over Restart Button works now <br />
 
 </details>
 
