@@ -27,13 +27,13 @@ public class InventoryManager : MonoBehaviour
     }
     void ChangeSelectedSlot(int newValue)
     {
-        if (selectedSlot >= 0)
+      /*  if (selectedSlot >= 0)
         {
             inventorySlots[selectedSlot].Deselect();
         }
 
         inventorySlots[newValue].Select();
-        selectedSlot = newValue;
+        selectedSlot = newValue;*/
     }
     public bool AddItem(Item item)
     {
