@@ -7789,11 +7789,11 @@ GameObject:
   - component: {fileID: 694475155}
   - component: {fileID: 694475157}
   - component: {fileID: 694475158}
-  - component: {fileID: 694475159}
+  - component: {fileID: 694475161}
   - component: {fileID: 694475160}
   m_Layer: 0
   m_Name: Sword
-  m_TagString: Untagged
+  m_TagString: Limit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7883,34 +7883,8 @@ MonoBehaviour:
   attackRange: 0.54
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 12288
+    m_Bits: 8192
   animator: {fileID: 694475160}
---- !u!61 &694475159
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694475154}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28125, y: 3.90625}
-    newSize: {x: 1.28125, y: 3.90625}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!95 &694475160
 Animator:
   serializedVersion: 5
@@ -7931,6 +7905,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!58 &694475161
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694475154}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.25}
+  serializedVersion: 2
+  m_Radius: 1.9531252
 --- !u!1 &694885919
 GameObject:
   m_ObjectHideFlags: 0
@@ -15708,6 +15698,7 @@ MonoBehaviour:
   wallet: 0
   mole_kills: 0
   totalDeaths: 0
+  totalTime: 0
   FloatingTextPrefab: {fileID: 3108828504996142033, guid: 0feb4dea85ec0fc43be99e56429414e6, type: 3}
 --- !u!1 &1405178974
 GameObject:

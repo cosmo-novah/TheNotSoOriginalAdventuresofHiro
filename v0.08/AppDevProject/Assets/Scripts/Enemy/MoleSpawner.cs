@@ -14,7 +14,8 @@ public class MoleSpawner : MonoBehaviour
         {
             // Debug.Log("M key is pressed");
             spawnrate();
-            Debug.Log("Kills from molespawner: " + GeneralPlayerActivities.Instance.mole_kills);
+            //Debug.Log("Kills from molespawner: " + GeneralPlayerActivities.Instance.mole_kills);
+            EnemyAnimationDetection.Instance.totalEnemies += 1;
         }
     }
 
@@ -23,13 +24,13 @@ public class MoleSpawner : MonoBehaviour
         if (this.gameObject.tag == "even" && GeneralPlayerActivities.Instance.mole_kills % 2 == 0)
         {
             // MoleClone.tag = "even";
-            Debug.Log("even");
+            //Debug.Log("even");
             MoleClone = Instantiate(MolePrefab, transform.position, Quaternion.identity) as GameObject;
         }
         else if (this.gameObject.tag == "odd" && GeneralPlayerActivities.Instance.mole_kills % 2 != 0)
         {
             // MoleClone.tag = "odd";
-            Debug.Log("odd");
+            //Debug.Log("odd");
             MoleClone = Instantiate(MolePrefab, transform.position, Quaternion.identity) as GameObject;
         }
     }

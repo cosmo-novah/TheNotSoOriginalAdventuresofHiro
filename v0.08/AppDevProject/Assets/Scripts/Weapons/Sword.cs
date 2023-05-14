@@ -9,10 +9,13 @@ public class Sword : MonoBehaviour
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
     public Animator animator;
+    Collider2D m_C2D;
     // Start is called before the first frame update
     void Start()
     {
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        // m_C2D = GetComponent<Collider2D>();
+        // m_C2D.enabled = false;
         // var swing = player.GetComponent<Rigidbody2D>();
         // swing.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
     }
@@ -30,6 +33,7 @@ public class Sword : MonoBehaviour
             swing.constraints = RigidbodyConstraints2D.FreezeAll;
             // swing.constraints = RigidbodyConstraints2D.FreezeRotation;
             // Debug.Log("Left Click");
+            // m_C2D.enabled = true;
             clickToAttack_Sword();
         }
     }
@@ -59,10 +63,13 @@ public class Sword : MonoBehaviour
         // Damage them
         foreach (Collider2D enemy in hitEnemies)
         {
-            Debug.Log("We hit " + enemy.name);
+            Debug.Log("We hit " + enemy.tag);
             Enemy.Instance.TakeDamage(1f);
+            // var enmee = enemy.GetComponentInParent<GameObject>();
+            // enmee.GetComponent<Enemy>().TakeDamage(1f);
         }
 
+        // m_C2D.enabled = !m_C2D.enabled;
     }
 
     void OnDrawGizmosSelected()
@@ -103,6 +110,7 @@ public class Sword : MonoBehaviour
     void endAnimation()
     {
         Debug.Log("Animation is done");
+        // m_C2D.enabled = false;
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
         var swing = player.GetComponent<Rigidbody2D>();
         swing.constraints &= ~RigidbodyConstraints2D.FreezePositionX;

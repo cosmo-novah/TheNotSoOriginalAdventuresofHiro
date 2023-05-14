@@ -8,7 +8,7 @@ public class TA_1 : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            EnemyAnimationDetection.Instance.trigger_point = 1;
+            //EnemyAnimationDetection.Instance.trigger_point = 1;
         }
         // Debug.Log("Trigger Point 1");
     }
