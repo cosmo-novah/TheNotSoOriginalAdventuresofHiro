@@ -19,12 +19,40 @@ A 2D RPG Dungeon Crawler developed using Unity as part of our Application Devlop
 ## CHANGELOG
 
 <details>
+   <summary> [v0.09.00] - 2023-05-13  </summary> <br />
+
+**Added:**
+
+- Big Health Potion (30 health) drops activated. <br />
+  Rare Speed Potion drops activated <br />
+
+</details>
+
+<details>
+   <summary> [v0.08.01] - 2023-05-13  </summary> <br />
+
+**Added:**
+
+- Switched folders over from v0.07 to v0.08 <br />
+
+</details>
+
+<details>
+   <summary> [v0.08.00] - 2023-05-13  </summary> <br />
+
+**Added:**
+
+- Room generation has been added: STILL IN DEVELOPMENT <br />
+
+</details>
+
+<details>
    <summary> [v0.07.00] - 2023-05-12  </summary> <br />
 
 **Added:**
 
 - Health potions: drop whenever an enemy is killed <br />
-    
+
 </details>
 
 <details>
