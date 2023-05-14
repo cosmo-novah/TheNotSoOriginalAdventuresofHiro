@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d695fddd310128a4ba01e673daba26d0, type: 3}
+  m_Name: Loot - Speed Potion
+  m_EditorClassIdentifier: 
+  lootName: Speed Potion
+  dropChance: 10
+  itemPrefab: {fileID: 8499312754842040643, guid: 6e2161c2e63487241aa78e609c97c8b0, type: 3}
