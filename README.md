@@ -19,6 +19,16 @@ A 2D RPG Dungeon Crawler developed using Unity as part of our Application Devlop
 ## CHANGELOG
 
 <details>
+   <summary> [v0.09.00] - 2023-05-13  </summary> <br />
+
+**Added:**
+
+- Big Health Potion (30 health) drops activated. <br />
+  Rare Speed Potion drops activated <br />
+
+</details>
+
+<details>
    <summary> [v0.08.01] - 2023-05-13  </summary> <br />
 
 **Added:**
