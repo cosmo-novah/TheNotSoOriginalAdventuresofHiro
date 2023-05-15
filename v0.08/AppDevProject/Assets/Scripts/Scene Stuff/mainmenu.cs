@@ -7,7 +7,7 @@ public class mainmenu : MonoBehaviour
     public void PlayGame()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        ScenesManager.Instance.LoadNextScene();
+        ScenesManager.Instance.LoadNextLevel();
         Debug.Log("Game has restarted");
         //Destroy(GameObject.Find("- Player -"));
     }

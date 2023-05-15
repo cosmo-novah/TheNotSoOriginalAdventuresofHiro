@@ -29,6 +29,8 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
         startTimer();
         if (timerActive == true)
         {
@@ -42,14 +44,21 @@ public class Timer : MonoBehaviour
         TimeSpan time = TimeSpan.FromSeconds(currentTime);
         // currentTimeText.text = time.Minutes.ToString() + ":" + time.Seconds.ToString() + ":" + time.Milliseconds.ToString();
         currentTimeText.text = time.ToString(@"mm\:ss\:fff");
-        stopTimer();
+
+        // stopTimer();
+
+        if (sceneName == "SampleScene")
+        {
+            stopTimer();
+        }
+
     }
 
     public void startTimer()
     {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-        if (sceneName != "StartMenu")
+        if (sceneName != "StartMenu" && sceneName != "SampleScene")
         {
             timerActive = true;
         }

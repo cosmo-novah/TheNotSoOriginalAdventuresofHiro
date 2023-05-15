@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class ScenesManager : MonoBehaviour
 {
+    public int checkpoint = 0;
+
     public static ScenesManager Instance;
 
     public void Awake()
@@ -12,38 +14,60 @@ public class ScenesManager : MonoBehaviour
         Instance = this;
     }
 
+    public void FixedUpdate()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+
+        switch (sceneName)
+        {
+            case "Level_5":
+                checkpoint = 5;
+                break;
+        }
+    }
+
     // WHEN NEW SCENES ARE ADDED:
     // MAKE SURE IT IS ADDED TO THIS AND
     // THEY ARE IN THE SAME ORDER AS THEY ARE IN THE BUILD SETTINGS
-    public enum Scene
+    public enum Scenes
     {
         StartMenu,
         // Login,
         //Scoreboard,
         SampleScene,
-        LevelOne,
+        Level_1,
+        Level_2,
+        Level_3,
+        Level_4,
+        Level_5,
+        Level_6,
+        Level_7,
+        Level_8,
+        Level_9,
+        Level_10,
+
         LevelTwo
     }
 
-    public void LoadScene(Scene scene)
+    public void LoadScene(Scenes scene)
     {
         SceneManager.LoadScene(scene.ToString());
     }
 
     public void LoadNewGame()
     {
-        SceneManager.LoadScene(Scene.SampleScene.ToString());
+        SceneManager.LoadScene(Scenes.SampleScene.ToString());
     }
 
-    public void LoadNextScene()
+    public void LoadNextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
     }
 
     public void LoadMainMenu()
     {
-        SceneManager.LoadScene(Scene.StartMenu.ToString());
+        SceneManager.LoadScene(Scenes.StartMenu.ToString());
 
     }
 }
