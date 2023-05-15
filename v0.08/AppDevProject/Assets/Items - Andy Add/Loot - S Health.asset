@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Loot - S Health
   m_EditorClassIdentifier: 
   lootName: 'Small Health '
-  dropChance: 99
+  dropChance: 15
   itemPrefab: {fileID: 5602213127143791198, guid: 442a3b7069581fe448193197c2f70162, type: 3}
