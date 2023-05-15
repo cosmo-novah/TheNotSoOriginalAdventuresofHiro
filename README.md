@@ -2,7 +2,7 @@
 
 A 2D RPG Dungeon Crawler developed using Unity as part of our Application Devlopment course.
 
-**CURRENT EXECUTABLE VERSION: v0.9.2 - Windows/Linux**
+**CURRENT EXECUTABLE VERSION: v0.9.2 - [Windows](https://drive.google.com/file/d/1Se9CeDS_H-lswOA8KFVcIZZKkilR2ufT/view?usp=sharing) / [Linux](https://drive.google.com/file/d/1e7hZEMyQTmejHhekbNvNPM9PIbDDeqYa/view?usp=sharing)**
 
 ⚠️ **WARNING: PLEASE READ BEFORE DOWNLOADING**
 
