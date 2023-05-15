@@ -9,7 +9,12 @@ public class Sword : MonoBehaviour
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
     public Animator animator;
+//<<<<<<< Updated upstream
     Collider2D m_C2D;
+//=======
+   public float swordDamage = 1f;
+
+//>>>>>>> Stashed changes
     // Start is called before the first frame update
     void Start()
     {
@@ -63,10 +68,15 @@ public class Sword : MonoBehaviour
         // Damage them
         foreach (Collider2D enemy in hitEnemies)
         {
+//<<<<<<< Updated upstream
             Debug.Log("We hit " + enemy.tag);
             Enemy.Instance.TakeDamage(1f);
             // var enmee = enemy.GetComponentInParent<GameObject>();
             // enmee.GetComponent<Enemy>().TakeDamage(1f);
+//=======
+            Debug.Log("We hit " + enemy.name);
+            Enemy.Instance.TakeDamage(swordDamage);
+//>>>>>>> Stashed changes
         }
 
         // m_C2D.enabled = !m_C2D.enabled;

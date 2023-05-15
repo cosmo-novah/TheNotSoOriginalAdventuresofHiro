@@ -214,6 +214,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f64324e66abe5864492b9f788b5e91f7, type: 2}
   - {fileID: 11400000, guid: cafde388eb9c3024386d8cb70373c388, type: 2}
   - {fileID: 11400000, guid: cebdc8d323321ae4ab80d57ac3680669, type: 2}
+  - {fileID: 11400000, guid: 165bc730d0b0c33468b9813248ef0819, type: 2}
 --- !u!95 &2439257119351132982
 Animator:
   serializedVersion: 5

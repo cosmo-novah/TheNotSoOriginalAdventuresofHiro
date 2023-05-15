@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
-    public InventorySlot[] inventorySlots;
+   /* public InventorySlot[] inventorySlots;
     public GameObject inventoryItemPrefab;
 
     int selectedSlot = -1;
@@ -33,7 +33,7 @@ public class InventoryManager : MonoBehaviour
         }
 
         inventorySlots[newValue].Select();
-        selectedSlot = newValue;*/
+        selectedSlot = newValue;
     }
     public bool AddItem(Item item)
     {
@@ -55,5 +55,5 @@ public class InventoryManager : MonoBehaviour
         GameObject newItemGo = Instantiate(inventoryItemPrefab, slot.transform);
         InventoryItem2 inventoryItem2 = newItemGo.GetComponent<InventoryItem2>();
         inventoryItem2.InitialiseItem(item);
-    }
+    }*/
 }
